@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <chan.eddie.wifipositioning.FloorPlanView
+        android:id="@+id/viewFloorPlan"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="5dp"
+            android:text="Estimated coordinate"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtEstCoord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="P(---- , ----)M"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ToggleButton
+            android:id="@+id/toggleScan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:textOff="Start"
+            android:textOn="Scanning" />
+
+        <ToggleButton
+            android:id="@+id/toggleRotate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Direction"
+            android:textOff="Direction"
+            android:textOn="Direction" />
+        
+        <ToggleButton
+            android:id="@+id/toggleTrustRegion"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="TR"
+            android:textOff="TR"
+            android:textOn="TR" />
+
+        <ToggleButton
+            android:id="@+id/toggleOritentationFilter"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="OF"
+            android:textOff="OF"
+            android:textOn="OF" />
+        
+        <ToggleButton
+            android:id="@+id/togglePoint"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Point"
+            android:textOff="Point"
+            android:textOn="Point" />
+
+        <ToggleButton
+            android:id="@+id/toggleGrid"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Grid"
+            android:textOff="Grid"
+            android:textOn="Grid" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnInfo"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="i" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
